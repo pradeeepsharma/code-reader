@@ -28,7 +28,6 @@ public class CodeReaderFactory {
     }
 
     private Language getLanguageFromFileName(String fileName) {
-        System.out.println(fileName);
         return Optional.ofNullable(fileName)
                 .filter(f -> f.contains("."))
                 .map(f -> f.substring(fileName.lastIndexOf(".")+1))
